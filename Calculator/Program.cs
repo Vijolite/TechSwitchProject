@@ -8,12 +8,35 @@ namespace Calculator_Prog
         static void Main (string[] args) 
         {
             Console.WriteLine("Welcome to the calculator!!!");
-            Console.WriteLine("Enter 2 numbers");
-            string s1=Console.ReadLine();
-            int TheFirstNum=int.Parse(s1);
-            string s2=Console.ReadLine();
-            int TheSecondNum=int.Parse(s2);
-            Console.WriteLine("The product is "+TheFirstNum*TheSecondNum);
+            Console.WriteLine("Please enter the operator");
+            string op=Console.ReadLine();
+            Console.WriteLine("How many numbers do you want?");
+            int n=int.Parse(Console.ReadLine());
+            int[] numbers = new int[n];
+            for (int i=0;i<n;i++) {
+                Console.WriteLine("Enter number {0}",(i+1).ToString());
+                numbers[i]=int.Parse(Console.ReadLine());
+            }
+
+            float result=numbers[0];
+            for (int i=1; i<n; i++) {
+                if (op=="+") {
+                    result+=numbers[i];
+                }
+                else if (op=="*") {
+                    result*=numbers[i];
+                }
+                else if (op=="-") {
+                    result-=numbers[i];
+                }
+                else if (op=="/") {
+                    result/=numbers[i];
+                }
+            }
+            string resultString=result.ToString("n2");
+            Console.WriteLine("The result is "+resultString);
+
+        
         }
     }
 }
