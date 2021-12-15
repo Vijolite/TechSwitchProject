@@ -1,0 +1,15 @@
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.csproj.AssemblyReference.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.AssemblyInfoInputs.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.AssemblyInfo.cs
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.csproj.CoreCompileInputs.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\Calculator_CS_classes.exe
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\Calculator_CS_classes.deps.json
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\Calculator_CS_classes.runtimeconfig.json
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\Calculator_CS_classes.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\ref\Calculator_CS_classes.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\bin\Debug\net6.0\Calculator_CS_classes.pdb
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\ref\Calculator_CS_classes.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.pdb
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_classes\obj\Debug\net6.0\Calculator_CS_classes.genruntimeconfig.cache

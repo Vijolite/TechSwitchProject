@@ -1,15 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
+﻿
 namespace Calculator_Prog
 {
     class Program 
     {
+        private const int NumberCalculator = 1;
+        private const int DateCalculator = 2;
         static void Main (string[] args) 
         {
             Welcome(); 
             while (true) {
-                PerformOneCalculation();
+                int calculationMode = AskForCalculationMode();
+                if (calculationMode==NumberCalculator)
+                    PerformOneNumberCalculation();
+                else
+                    PerformOneDateCalculation();
             }
         }
 
@@ -17,7 +21,16 @@ namespace Calculator_Prog
             Console.WriteLine("Welcome to the calculator!!!");
         }
 
-        private static void PerformOneCalculation() {
+        private static int AskForCalculationMode() {
+            string op;
+            do {
+                Console.WriteLine("Witch calculator do you want? \n 1) Numbers \n 2) Dates ");
+                op=Console.ReadLine();
+            } while ((op!="1") && (op!="2"));
+            return int.Parse(op);
+        }
+
+        private static void PerformOneNumberCalculation() {
             string op=EnterOperator();
             int n=EnterTotal();
             int[] numbers = EnterNumbers(n);
@@ -37,6 +50,13 @@ namespace Calculator_Prog
                 }
             }
             PrintResult(result);
+        }
+
+        private static void PerformOneDateCalculation() {
+            DateTime dt=EnterOneDate();
+            Console.WriteLine("Please enter the number of days to add:");
+            int n=EnterOneNumber ();
+            Console.WriteLine("The answer is : {0}",dt.AddDays(n).ToLongDateString());
         }
         private static string EnterOperator() {
             string op;
@@ -70,7 +90,19 @@ namespace Calculator_Prog
                 }
             } while (!(int.TryParse(s, out n))); 
             return n;
+        }
 
+        private static DateTime EnterOneDate () {
+            DateTime dt;
+            string s;
+            Console.WriteLine("Please enter a date: ");
+            do {
+                s=Console.ReadLine();
+                if (!(DateTime.TryParse(s, out dt))) {
+                    Console.WriteLine("Enter a DATE!!!");
+                }
+            } while (!(DateTime.TryParse(s, out dt))); 
+            return dt;
         }
         private static void PrintResult(float result) {
             string resultString=result.ToString("n2");
