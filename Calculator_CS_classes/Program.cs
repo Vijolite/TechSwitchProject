@@ -62,16 +62,17 @@ namespace Calculator_Prog
     {
         public DateTime Dt {get;set;}
         public DateCalculator () {
-            DateTime dt;
-            string s;
-            Console.WriteLine("Please enter a date: ");
-            do {
-                s=Console.ReadLine();
-                if (!(DateTime.TryParse(s, out dt))) {
-                    Console.WriteLine("Enter a DATE!!!");
-                }
-            } while (!(DateTime.TryParse(s, out dt))); 
-            this.Dt= dt;
+            // DateTime dt;
+            // string s;
+            // Console.WriteLine("Please enter a date: ");
+            // do {
+            //     s=Console.ReadLine();
+            //     if (!(DateTime.TryParse(s, out dt))) {
+            //         Console.WriteLine("Enter a DATE!!!");
+            //     }
+            // } while (!(DateTime.TryParse(s, out dt))); 
+            // this.Dt= dt;
+            this.Dt=GeneralMethods.EnterOneDate ();
         }
         public void AddANumber(int n) {
             this.Dt=this.Dt.AddDays(n);
@@ -83,7 +84,7 @@ namespace Calculator_Prog
     }
 
     class GeneralMethods 
-        {
+    {
         public static int EnterOneNumber () {
         int n;
         string s;
@@ -94,6 +95,18 @@ namespace Calculator_Prog
             }
         } while (!(int.TryParse(s, out n))); 
         return n;
+        }
+        public static DateTime EnterOneDate () {
+            DateTime dt;
+            string s;
+            Console.WriteLine("Please enter a date: ");
+            do {
+                s=Console.ReadLine();
+                if (!(DateTime.TryParse(s, out dt))) {
+                    Console.WriteLine("Enter a DATE!!!");
+                }
+            } while (!(DateTime.TryParse(s, out dt))); 
+            return dt;
         }
     }
 
