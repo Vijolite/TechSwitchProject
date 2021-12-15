@@ -62,16 +62,6 @@ namespace Calculator_Prog
     {
         public DateTime Dt {get;set;}
         public DateCalculator () {
-            // DateTime dt;
-            // string s;
-            // Console.WriteLine("Please enter a date: ");
-            // do {
-            //     s=Console.ReadLine();
-            //     if (!(DateTime.TryParse(s, out dt))) {
-            //         Console.WriteLine("Enter a DATE!!!");
-            //     }
-            // } while (!(DateTime.TryParse(s, out dt))); 
-            // this.Dt= dt;
             this.Dt=GeneralMethods.EnterOneDate ();
         }
         public void AddANumber(int n) {
