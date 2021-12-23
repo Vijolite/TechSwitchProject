@@ -3,13 +3,13 @@ namespace Calculator_Prog
 {
     class NumberCalculator
     {
-        public int[] Numbers {get;set;}
+        public List <int> Numbers {get;set;}
         public string Op {get;set;}
-        public int N {get;set;}
+        //public int N {get;set;}
 
         public NumberCalculator() {
             this.EnterOperator();
-            this.EnterTotal();
+            //this.EnterTotal();
             this.EnterNumbers();
         }
         private void EnterOperator() {
@@ -20,18 +20,25 @@ namespace Calculator_Prog
             } while ((op!="+") && (op!="-") && (op!="*") &&(op!="/") );
             this.Op= op;
         }
-        private void EnterTotal() {
-            Console.WriteLine("How many numbers do you want?");
-            int n=GeneralMethods.EnterOneNumber ();
-            this.N= n;
-        }
+        // private void EnterTotal() {
+        //     Console.WriteLine("How many numbers do you want?");
+        //     int n=GeneralMethods.EnterOneNumber ();
+        //     this.N= n;
+        // }
         private void EnterNumbers() {
-            int[] numbers = new int[this.N];
-            for (int i=0;i<this.N;i++) {
+            //int[] numbers = new int[this.N];
+            Numbers=new List<int> ();
+            int? x;
+            int i =0;
+            do {
                 Console.WriteLine("Enter number {0}",(i+1).ToString());
-                numbers[i]=GeneralMethods.EnterOneNumber ();
-            }
-            this.Numbers =numbers;
+                //numbers[i]=GeneralMethods.EnterOneNumber ();
+                x=GeneralMethods.EnterOneNumberNull ();
+                if (x.HasValue) this.Numbers.Add(x.Value);
+                //this.Numbers.Add(x.Value);
+                i++;
+            } while (x.HasValue);
+            //this.Numbers =numbers;
         }
         public void PrintResult(float result) {
             string resultString=result.ToString("n2");
@@ -47,29 +54,15 @@ namespace Calculator_Prog
                     result = this.Numbers.Aggregate((a,b)=>a*b);
             if (this.Op=="/") 
                     result = this.Numbers.Aggregate((a,b)=>a/b);
-            
-            // float result=this.Numbers[0];
-            // for (int i=1; i<this.Numbers.Length; i++) {
-            //     if (this.Op=="+") {
-            //         result+=this.Numbers[i];
-            //     }
-            //     else if (this.Op=="*") {
-            //         result*=this.Numbers[i];
-            //     }
-            //     else if (this.Op=="-") {
-            //         result-=this.Numbers[i];
-            //     }
-            //     else if (this.Op=="/") {
-            //         result/=this.Numbers[i];
-            //     }
-            // }
-            //this.PrintResult(result);
             return result;
         }
         public string MakeAString() {
-            string s=this.Numbers[0].ToString();
-            for (int i=1; i<this.Numbers.Length; i++) {
-                s=s+this.Op+this.Numbers[i].ToString();
+            int i=0;
+            string s="";
+            foreach (int x in Numbers) {
+                if (i==0) s=x.ToString();
+                else s=s+this.Op+x.ToString();
+                i++;
             }
             s=s+"="+this.Calculate().ToString("n2");
             return s;
@@ -98,6 +91,23 @@ namespace Calculator_Prog
 
     class GeneralMethods 
     {
+        public static int? EnterOneNumberNull () {
+        // int? n;
+        // string s;
+        // do {
+        //     s=Console.ReadLine();
+        //     if (!(int.TryParse(s, out n))) {
+        //         Console.WriteLine("Enter a NUMBER!!!");
+        //     }
+        // } while (!(int.TryParse(s, out n))); 
+        // return n;
+        // }
+        int n;
+        string s=Console.ReadLine();
+        if ((int.TryParse(s, out n))) return n;
+        return null;
+        }
+
         public static int EnterOneNumber () {
         int n;
         string s;

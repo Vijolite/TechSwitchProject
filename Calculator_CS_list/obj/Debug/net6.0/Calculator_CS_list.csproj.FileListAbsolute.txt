@@ -1,0 +1,15 @@
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.csproj.AssemblyReference.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.AssemblyInfoInputs.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.AssemblyInfo.cs
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.csproj.CoreCompileInputs.cache
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\Calculator_CS_list.exe
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\Calculator_CS_list.deps.json
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\Calculator_CS_list.runtimeconfig.json
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\Calculator_CS_list.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\ref\Calculator_CS_list.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\bin\Debug\net6.0\Calculator_CS_list.pdb
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\ref\Calculator_CS_list.dll
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.pdb
+C:\PROGRAMMING\JS\TechSwitchProject\Calculator_CS_list\obj\Debug\net6.0\Calculator_CS_list.genruntimeconfig.cache
